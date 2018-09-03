@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WhatsApp</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row no-gutters">
+    <div class="col-md-4 p-0" id="main-body">
+      <div class="msg-center" id="checkChat">
+        <div class=" col bg-light navigation">
+            <div class="col d-flex justify-content-between upper">
+              <a href="">Edit</a>
+              <a href=""><i class="far fa-edit"></i></a>
+            </div>
+            <h1 class="chat">Chats</h1>
+            <input type="text" class="form-control search" placeholder="&#xF002; Search" aria-label="Search" aria-describedby="basic-addon1">
+        </div>
+        <div class="col d-flex justify-content-between align-items-center gb">
+          <a href="">Broadcast List</a><a href="">New Group</a>
+        </div>
+        <div class="list">
+          <div class="col d-flex align-items-center msg">
+            <a data-toggle="modal" data-target="#arfi-pic" class="image"><img src="images/arfi.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a onclick="mess()" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Arfi..♥</span><span class="time">4:15 PM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                  <div ><img src="images/blue.png" height="28" width="28" alt="."><span class="num">1</span></div>
+                <span class="symbol">〉</span></div>
+                <div class="item">hello.!!</div>
+              </div>
+            </a>  
+          </div>  
+          <div class="col d-flex align-items-center msg">
+            <a data-toggle="modal" data-target="#naved-pic" class="image"><img src="images/naved.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a onclick="mess()" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Naved..</span><span>2:25 PM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol">〉</span></div>
+                <div class="item"><i class="fas fa-check-double tick"></i> See you soon!</div>
+              </div>
+            </a>  
+          </div>
+          <div class="col d-flex align-items-center msg">
+            <a data-toggle="modal" data-target="#anjum-pic" class="image"><img src="images/anjum.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a onclick="mess()" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Anjum sis</span><span>Yesterday</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol">〉</span></div>
+                <div class="item"><i class="fas fa-camera"></i> image</div>
+              </div>
+            </a>  
+          </div> 
+          <div class="col d-flex align-items-center msg">
+            <a data-toggle="modal" data-target="#group-pic" class="image"><img src="images/group.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a onclick="mess()" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Next Outing!!</span><span class="time">11:30 AM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-between">
+                  <div style="margin-left: 2vh;">Rajesh:</div>
+                  <div class="d-flex">
+                    <div ><img src="images/blue.png" height="28" width="28" alt="."><span class="num">8</span></div>
+                    <span class="symbol">〉</span></div>
+                  </div>
+                <div class="item">Please send the pics.</div>
+              </div>
+            </a>  
+          </div> 
+          <div class="col d-flex align-items-center msg">
+            <a data-toggle="modal" data-target="#babu-pic" class="image"><img src="images/babu.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a onclick="mess()" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Abu..</span><span>1:00 PM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol">〉</span></div>
+                <div class="item"><i class="fas fa-video"></i> Video</div>
+              </div>
+            </a>  
+          </div>
+          <div class="col d-flex align-items-center msg">
+            <a data-toggle="modal" data-target="#rajesh-pic" class="image"><img src="images/rajesh.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a onclick="mess()" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Rajesh AM!!</span><span>3:28 AM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol">〉</span></div>
+                <div class="item"><i class="fas fa-check-double tick"></i> Zayn Malik is all time hit!!!</div>
+              </div>
+            </a>  
+          </div> 
+          <div class="col d-flex align-items-center msg">
+            <a data-toggle="modal" data-target="#abu-pic" class="image"><img src="images/abu.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a onclick="mess()" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Family group..</span><span class="time">5:00 PM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-between">
+                  <div style="margin-left: 2vh;">Anjum sis:</div>
+                  <div class="d-flex">
+                    <div ><img src="images/blue.png" height="28" width="28" alt="."><span class="num">5</span></div>
+                    <span class="symbol">〉</span></div>
+                  </div>
+                <div class="item"><i class="fas fa-video"></i> Video</div>
+              </div>
+            </a>  
+          </div>   
+          <div class="col d-flex align-items-center msg">
+            <a data-toggle="modal" data-target="#akash-pic" class="image"><img src="images/akash.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a onclick="mess()" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Palkar..</span><span class="time">4:48 PM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol">〉</span></div>
+                <div class="item">Bro... Gym make me like this.</div>
+              </div>
+            </a>  
+          </div>
+        </div>
+      </div> 
+      <div class="d-none call-center" id="checkCall">
+        <div class=" col bg-light navigation">
+            <div class="col d-flex justify-content-between align-items-center upper">
+              <a href="">Edit</a>
+              <div class="d-flex"><div class="all">All</div><div class="miss">Missed</span></div></div>
+              <a href="" style="font-size: 2rem;"><i class="far fa-address-book"></i></i></a>
+            </div>
+            <h1 class="chat">Calls</h1>
+            <input type="text" class="form-control search" placeholder="&#xF002; Search" aria-label="Search" aria-describedby="basic-addon1">
+        </div>
+        <div class="call-list">
+          <div class="col d-flex align-items-center msg">
+            <a href="" class="image"><img src="images/arfi.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a href="" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Arfi..♥</span><span>4:24 PM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol" style="color: blue;"><i class="fas fa-info-circle"></i></span></div>
+                <div class="item" style="color: grey;"><i class="fas fa-video"></i> incoming</div>
+              </div>
+            </a>  
+          </div>  
+          <div class="col d-flex align-items-center msg">
+            <a href="" class="image"><img src="images/arfi.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a href="" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Arfi..♥</span><span>3:00 PM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol" style="color: blue;"><i class="fas fa-info-circle"></i></span></div>
+                <div class="item" style="color: grey"><i class="fas fa-phone"></i> incoming</div>
+              </div>
+            </a>  
+          </div>
+          <div class="col d-flex align-items-center msg">
+            <a href="" class="image"><img src="images/naved.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a href="" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Naved..</span><span>2:28 PM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol" style="color: blue;"><i class="fas fa-info-circle"></i></span></div>
+                <div class="item" style="color: grey"><i class="fas fa-phone"></i> incoming</div>
+              </div>
+            </a>  
+          </div> 
+          <div class="col d-flex align-items-center msg">
+            <a href="" class="image"><img src="images/rajesh.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a href="" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Rajesh AM!!</span><span>3:00 AM</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol" style="color: blue;"><i class="fas fa-info-circle"></i></span></div>
+                <div class="item" style="color: grey;"><i class="fas fa-video"></i> incoming</div>
+              </div>
+            </a>  
+          </div> 
+          <div class="col d-flex align-items-center msg">
+            <a href="" class="image"><img src="images/arfi.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a href="" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Arfi..♥</span><span>Yesterday</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol" style="color: blue;"><i class="fas fa-info-circle"></i></span></div>
+                <div class="item" style="color: grey"><i class="fas fa-phone"></i> incoming</div>
+              </div>
+            </a>  
+          </div>
+          <div class="col d-flex align-items-center msg">
+            <a href="" class="image"><img src="images/arfi.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a href="" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Arfi..♥</span><span>Yesterday</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol" style="color: blue;"><i class="fas fa-info-circle"></i></span></div>
+                <div class="item" style="color: grey;"><i class="fas fa-video"></i> incoming</div>
+              </div>
+            </a>  
+          </div> 
+          <div class="col d-flex align-items-center msg">
+            <a href="" class="image"><img src="images/anjum.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a href="" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Anjum Sis</span><span>Yesterday</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol" style="color: blue;"><i class="fas fa-info-circle"></i></span></div>
+                <div class="item" style="color: grey"><i class="fas fa-phone"></i> incoming</div>
+              </div>
+            </a>  
+          </div>   
+          <div class="col d-flex align-items-center msg">
+            <a href="" class="image"><img src="images/anjum.JPG" width="78" alt="..." class="rounded-circle" ></a>
+            <a href="" class="col d-inline-flex align-items-center message">
+              <div class="row d-flex" style="width: 102%">
+              <div class="col-12 d-flex justify-content-between align-items-center"><span class="name">Arfi..♥</span><span>Yesterday</span></div>
+              <div class="col-12 p-0 d-flex justify-content-end">
+                <span class="symbol" style="color: blue;"><i class="fas fa-info-circle"></i></span></div>
+                <div class="item" style="color: grey;"><i class="fas fa-video"></i> outgoing</div>
+              </div>
+            </a>  
+          </div>
+        </div>
+      </div>
+      <div class="d-none settings" id="setting">
+        <div class="col-12 bg-light set">Settings</div>
+          <div class="col d-flex justify-content-between align-items-center bg-white set-profile">
+          <div class="col p-0 mine">
+            <img src="images/mine.JPG" height="75" width="75" alt="..." class="rounded-circle"> 
+            <div class="col p-0">
+              <div class="col zeal">Zealous_zayn</div>
+              <div class="col">Coding...</div>
+            </div>
+          </div>
+          <span class="symbol1">〉</span>
+          </div>
+        <div class="set-list">
+          <div class="col bg-white web">
+            <div class="col d-flex">
+              <img src="images/star.png" height="30" alt="">
+              <div class="col d-flex justify-content-between p-0 star-msg"><span class="star">Starred Messages</span>
+              <span class="symbol1">〉</span></div>
+            </div>
+            <div class="col d-inline-flex" style="margin-top: 2vh;">
+              <img src="images/lap.png" height="30" alt="">
+              <div class="col d-flex justify-content-between p-0"><span class="star">WhatsApp/Desktop</span>
+              <span class="symbol1">〉</span></div>
+            </div>
+          </div>
+          <div class="col bg-white account">
+            <div class="col d-flex">
+              <img src="images/key.png" height="30" alt="">
+              <div class="col d-flex justify-content-between p-0 star-msg"><span class="star">Account</span>
+              <span class="symbol1">〉</span></div>
+            </div>
+            <div class="col d-inline-flex" style="margin-top: 2vh;">
+              <img src="images/WhatsApp.png" height="30" alt="">
+              <div class="col d-flex justify-content-between p-0" style="border-bottom: 1px solid #cecece;"><span class="star">Chats</span>
+              <span class="symbol1">〉</span></div>
+            </div>
+            <div class="col d-inline-flex" style="margin-top: 2vh;">
+              <img src="images/notify.png" height="30" alt="">
+              <div class="col d-flex justify-content-between p-0" style="border-bottom: 1px solid #cecece;"><span class="star">Notifications</span>
+              <span class="symbol1">〉</span></div>
+            </div>
+            <div class="col d-inline-flex" style="margin-top: 2vh;">
+              <img src="images/heart.png" height="30" alt="">
+              <div class="col d-flex justify-content-between p-0"><span class="star">Tell a Friend</span>
+              <span class="symbol1">〉</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none profile" id="checkProfile">
+        <div class="col bg-light edit">
+          <h1 class="edit-pro">Edit Profile</h1>
+        </div>
+        <div class="about">
+          <figure class="figure">
+            <img src="images/mine.JPG" width="300"class="img-fluid rounded-circle" alt="A generic square placeholder image with rounded corners in a figure.">
+          </figure>
+          <div class="col d-flex justify-content-between align-items-center">
+            <button class="button"><i class="fas fa-camera" style="color: white;"></i></button>
+            <div class="in-name">Zealous_zayn</div>
+          </div>
+          <div class="col bg-white text">Enter your name and add an optional profile picture</div>
+          <div class="ph-num">PHONE NUMBER</div>
+          <div class="col d-flex justify-content-between bg-white phone-number">
+            <div>+91 9763575928</div><div>〉</div></div>
+          <div class="ph-num">ABOUT</div>
+          <div class="col d-flex justify-content-between bg-white phone-number">
+            <div>Coding...</div><div>〉</div></div>
+        </div>
+      </div>
+      <footer class=" d-flex justify-content-around foot bg-light">
+        <a onclick="sets()"><div class="toggler" ><i class="fas fa-cog"></i></div></a>
+        <a onclick="call()"><div class="toggler"><i class="fas fa-phone"></i></div></a>
+         <a onclick="chat()"><div class="toggler"><i class="fas fa-comments"></i></div></a>
+         <a onclick="prof()"><div class="toggler"><i class="fas fa-user"></i></div></a>
+      </footer>
+    </div>
+    <div class="d-none d-md-block col-md-8 border-left border-dark" id="message-body">
+      <nav class="navbar navbar-light bg-light">
+        <a data-toggle="modal" data-target="#rajesh-pic" class="navbar-brand d-flex">
+          <div class="back-symbol" onclick="symb()"><i class="fas fa-angle-left"></i></div>
+          <img src="images/rajesh.JPG" width="75" height="75" class="d-inline-block align-top rounded-circle raj-img" alt="">
+          <div style="margin-left: 4vh;">
+            <span style="font-size: 1.5rem;">Rajesh AM!!</span><br>
+            <span style="color: #696969">Online</span></div>
+        </a>
+        <div class="d-flex">
+          <div class="make-call"><i class="fas fa-phone"></i></div>
+          <div class="make-video"><i class="fas fa-video"></i></div>
+        </div>
+      </nav>
+      <div class="col chat-body">
+        <div class="col">
+          <div class="d-flex">
+            <div class="d-inline-flex align-items-end incoming">
+              <div class="hello">Hey!</div>
+              <div class="text-muted">2:00 AM</div>
+            </div>
+            </div>
+            <div class="d-flex">
+            <div class="d-inline-flex align-items-end snd-incoming">
+              <div class="hello">Have you watched Anne Marie new song.</div>
+              <small class="text-muted">2:00 AM</small>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end sending">
+              <div class="hello">Yoo! Bro.</div>
+              <div class="text-muted">2:01 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span></div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end snd-sending">
+              <div class="hello">As always bakwash tha!.<i class="far fa-grin-squint-tears"></i></div>
+              <small class="text-muted">2:01 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span>
+              </small>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="d-inline-flex align-items-end incoming">
+              <div class="hello">Chup reeee...</div>
+              <div class="text-muted">2:02 AM</div>
+            </div>
+            </div>
+            <div class="d-flex">
+            <div class="d-inline-flex align-items-end snd-incoming">
+              <div class="hello">Anne Marie always rocks. <i class="far fa-grin-hearts"></i></div>
+              <small class="text-muted">2:02 AM</small>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end sending">
+              <div class="hello">Abey Huuttttt!!!!!</div>
+              <div class="text-muted">2:01 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span></div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end snd-sending">
+              <div class="hello">Zayn Malik always rocks!! <i class="far fa-grin-squint-tears"></i></div>
+              <small class="text-muted">2:03 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span>
+              </small>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="d-inline-flex align-items-end incoming">
+              <div class="hello">Z-squad Sucks....</div>
+              <div class="text-muted">2:04 AM</div>
+            </div>
+            </div>
+            <div class="d-flex">
+            <div class="d-inline-flex align-items-end snd-incoming">
+              <div class="hello">AM-squad rocks!!! <i class="far fa-grin-hearts"></i></div>
+              <small class="text-muted">2:04 AM</small>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end sending">
+              <div class="hello">Jaa Bheeeee....</div>
+              <div class="text-muted">2:05 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span></div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end snd-sending">
+              <div class="hello">BDW, coming for outing na.</div>
+              <small class="text-muted">2:05 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span>
+              </small>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="d-inline-flex align-items-end incoming">
+              <div class="hello">Yoo!!! Bro..</div>
+              <div class="text-muted">2:05 AM</div>
+            </div>
+            </div>
+            <div class="d-flex">
+            <div class="d-inline-flex align-items-end snd-incoming">
+              <div class="hello">Always in for outing. <i class="far fa-grin-hearts"></i></div>
+              <small class="text-muted">2:04 AM</small>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end sending">
+              <div class="hello">Same here....</div>
+              <div class="text-muted">2:06 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span></div>
+            </div>
+            </div>
+            <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end snd-sending">
+              <div class="hello">See you soon Bro.</div>
+              <small class="text-muted">2:06 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span>
+              </small>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="d-flex justify-content-end">
+            <div class="d-inline-flex align-items-end snd-sending">
+              <div class="hello">Zayn malik is all time hit!!!.</div>
+              <small class="text-muted">2:06 AM  <span style="color: blue;"><i class="fas fa-check-double"></i></span>
+              </small>
+            </div>
+            </div>
+        </div>
+      </div>
+      <footer class="d-flex align-items-center justify-content-between p-2 bg-light input-text">
+        <div class="d-flex">
+          <div class="plus"><i class="fas fa-plus"></i></div>
+          <input type="text" class="type-text" placeholder="Type a message...">
+          <div class="plus"><i class="fas fa-share"></i></div>
+        </div>
+        <div class="d-flex">
+          <div class="camera"><i class="fas fa-camera"></i></div>
+          <div class="mike"><i class="fas fa-microphone"></i></div>
+        </div>
+      </footer>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Important!!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        1) This is a dummy whatsapp interface.<br>
+                        2) All funtions are working same as whatsapp in a footer.<br>
+                        3) Hope you guys will enjoy it.<br>
+                        4) Try to click on profile pic it will pop up.<br>
+                        5) If you will open anyone chats.<br>A rajesh chat will appear
+                           since I have coded in that way.<br>
+                        6) No rights reserved :)
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- profile pic modal -->
+<div class="modal" id="arfi-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <img src="images/arfi.JPG" class="modal-content"> 
+                </div>
+            </div>
+</div>
+<div class="modal" id="naved-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <img src="images/naved.JPG" class="modal-content"> 
+                </div>
+            </div>
+</div>
+<div class="modal" id="anjum-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <img src="images/anjum.JPG" class="modal-content"> 
+                </div>
+            </div>
+</div>
+<div class="modal" id="group-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <img src="images/group.JPG" class="modal-content"> 
+                </div>
+            </div>
+</div>
+<div class="modal" id="babu-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <img src="images/babu.JPG" class="modal-content"> 
+                </div>
+            </div>
+</div>
+<div class="modal" id="rajesh-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <img src="images/rajesh.JPG" class="modal-content"> 
+                </div>
+            </div>
+</div>
+<div class="modal" id="abu-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <img src="images/abu.JPG" class="modal-content"> 
+                </div>
+            </div>
+</div>
+<div class="modal" id="akash-pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                        <img src="images/akash.JPG" class="modal-content"> 
+                </div>
+            </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="style.js"></script>
+</body>
+</html>        
+        
+        
+    
